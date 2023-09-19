@@ -2,8 +2,6 @@ import React from 'react'
 import { Header } from '../partials/header'
 import slideshow from '../images/Assets/Slideshow/malerspande.jpg'
 import { Sectionstyle } from '../style/home.style'
-import artone from '../images/Assets/Layout/art-one.svg'
-import arttwo from '../images/Assets/Layout/art-two.svg'
 import { Footer } from '../partials/footer'
 
 export const Home = () => {
@@ -33,14 +31,14 @@ export const Home = () => {
                     </div>
 
                     <div>
-                        <img src={artone} alt="affald" />
+                        <img src="" alt="affald" />
                     </div>
                 </article>
 
 
                 <article className='arttwo'>
                     <div>
-                        <img src={arttwo} alt="skraldespande" />
+                        <img src="" alt="skraldespande" />
                     </div>
 
                     <div>

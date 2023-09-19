@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Header } from '../partials/header'
+import { Sortingstyle } from '../style/sorting.style';
+import { NavLink } from 'react-router-dom';
+import { Footer } from '../partials/footer';
 
 export const Sortering = () => {
   const [images, setImages] = useState([]);
@@ -10,28 +13,41 @@ export const Sortering = () => {
 
       const url = `http://localhost:4000/section`;
       const result = await axios.get(url)
-      setImages(result.data.slice(0, 2))
+      setImages(result.data.slice(0, 12))
+      console.log(result.data);
     }
     getdata()
   }, []);
 
   return (
-    <div>
-            <Header />
-      {images && images.map(item => {
-            return (
-              <>
-                <h1>Skuespillere</h1>
-                <div className='container'>
-                  <img key={item.id} src={item.image} alt="Billed" />
-                  <h3 key={item.id} >{item.name}</h3>
-                  <p key={item.id}>{item.description}</p>
-                  <button>LÆS MERE</button>
-                </div>
-              </>
-            )
+    <>
 
-          })}
-    </div>
+      <Header />
+      <Sortingstyle>
+        <section>
+
+          <div>
+
+          </div>
+          <div className='grid'>
+
+            {images && images.map(item => {
+              return (
+                <>
+                  <NavLink to={`/sortering/${item.id}`}>
+                    <div key={item.id} className='container'>
+                      <img src={`http://localhost:4000/Assets/Images/Guide/Categories/${item.filename}`} alt="Billed" />
+                      <h3 >{item.title}</h3>
+                    </div>
+                  </NavLink>
+                </>
+              )
+
+            })}
+          </div>
+        </section>
+      </Sortingstyle>
+      <Footer />
+    </>
   )
 }
