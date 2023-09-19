@@ -2,17 +2,20 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Header } from '../partials/header'
 import { Footer } from '../partials/footer';
+import { NavLink, useParams } from 'react-router-dom';
 
 export const Sortering_details = () => {
-  const [images, setImages] = useState([]);
+  const [details, setDetails] = useState([]);
+  const { id } = useParams()
+  console.log(id);
 
   useEffect(() => {
     const getdata = async () => {
 
-      const url = `http://localhost:4000/section`;
+      const url = `http://localhost:4000/section/${id}`;
       const result = await axios.get(url)
-      setImages(result.data.slice(0, 12))
-      console.log(result.data);
+      setDetails(result.data.categories);
+      console.log(result.data.categories);
     }
     getdata()
   }, []);
@@ -21,9 +24,16 @@ export const Sortering_details = () => {
     <>
 
       <Header />
-        <section>
-            <h1></h1>
-        </section>
+      {details && details.map(item => {
+              return (
+                <>
+                    <div key={item.id} className='container'>
+                      <h3 >{item.title}</h3>
+                    </div>
+                </>
+              )
+
+            })}
       <Footer />
     </>
   )

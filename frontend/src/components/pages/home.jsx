@@ -3,6 +3,8 @@ import { Header } from '../partials/header'
 import slideshow from '../images/Assets/Slideshow/malerspande.jpg'
 import { Sectionstyle } from '../style/home.style'
 import { Footer } from '../partials/footer'
+import artone from '../images/Assets/Layout/art-one.png'
+import arttwo from '../images/Assets/Layout/art-two.png'
 
 export const Home = () => {
     return (
@@ -30,15 +32,15 @@ export const Home = () => {
                         <button>Se affaldsguide</button>
                     </div>
 
-                    <div>
-                        <img src="" alt="affald" />
+                    <div className='pic'>
+                        <img src={artone} alt="affald" />
                     </div>
                 </article>
 
 
                 <article className='arttwo'>
-                    <div>
-                        <img src="" alt="skraldespande" />
+                    <div className='pic'>
+                        <img src={arttwo} alt="skraldespande" />
                     </div>
 
                     <div>

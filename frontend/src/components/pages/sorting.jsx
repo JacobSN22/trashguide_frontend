@@ -26,8 +26,9 @@ export const Sortering = () => {
       <Sortingstyle>
         <section>
 
-          <div>
-
+          <div className='search'>
+            <h1><span>Din guide</span> <br /> til en sund affaldssotering</h1>
+            <input type="text" placeholder='Søg på affald' />
           </div>
           <div className='grid'>
 

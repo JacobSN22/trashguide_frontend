@@ -53,6 +53,7 @@ section {
         gap: 10em;
         padding: 0 15%;
         font-family: sans-serif;
+        margin-bottom: 5em;
 
         img {
             width: 100%;
@@ -79,6 +80,33 @@ section {
 
         p {
             font-size: 20px;
+        }
+    }
+
+    .artone {
+        .pic {
+            width: 400px;
+            max-width: 400px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .arttwo {
+
+        .pic {
+            width: 400px;
+            max-width: 400px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
 
