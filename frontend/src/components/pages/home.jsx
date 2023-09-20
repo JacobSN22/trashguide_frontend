@@ -25,6 +25,7 @@ export const Home = () => {
 
                 </section>
 
+
                 <article className='artone'>
                     <div>
                         <h2>Din <span>guide til sortering</span> </h2>
