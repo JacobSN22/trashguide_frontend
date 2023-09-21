@@ -47,7 +47,6 @@ export const Order = () => {
       <Header />
       <div>
         <form onSubmit={handleSubmit(formSubmit)}>
-          <input type="hidden" value="1" {...register('event_id')} />
           <div>
             <label htmlFor="fullname">Fuldenavn:</label>
             <input {...register('fullname',
@@ -87,7 +86,6 @@ export const Order = () => {
                   value: 9990,
                   message: 'Postnummer kan ikke være større end 9990'
                 }
-
               })} />
             {errors.zipcode && <span>{errors.zipcode.message}</span>}
           </div>
@@ -110,7 +108,6 @@ export const Order = () => {
                   value: /^\S+@\S+$/,
                   message: 'Du skal indtaste en gyldig mailadresse'
                 },
-
               })} />
             {errors.email && <span>{errors.email.message}</span>}
           </div>
@@ -135,7 +132,6 @@ export const Order = () => {
             <select name="" id=""{...register('container_id',
               {
                 required: 'Du skal indtaste vælge en container',
-
               })}>
               <option  hidden>Vælg container</option>
               <option value="1">Pap og papir</option>

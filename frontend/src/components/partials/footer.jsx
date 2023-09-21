@@ -9,10 +9,12 @@ export const Footer = () => {
   return (
     <>
       <Footerstyle>
-        <img src={wave} alt="" />
+        <div className='wave'>
+          <img src={wave} alt="" />
+        </div>
         <footer>
           <div className='footertext'>
-            
+
             <h4><img src={logo} alt="" /> Affaldsguiden</h4>
             <p>Vi arbejder for at informere om korrekt affaldssortering. Ved at sortere hjælper du os, men også klimaet.</p> <br /><br />
             <h5>©2023 Affaldsguiden. </h5>

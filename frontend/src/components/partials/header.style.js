@@ -15,6 +15,7 @@ export const Headerstyle = styled.header`
 
     h1 {
         display: inline;
+        margin: 0 0 0 0.5em;
     }
 
     nav {
