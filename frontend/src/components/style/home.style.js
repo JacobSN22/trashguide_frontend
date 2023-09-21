@@ -38,13 +38,14 @@ section {
         font-weight: 100;
     }
 
-    button {
+    a {
         padding: 1em 2em;
         background-color: #114D46;
         color: #FFFFFF;
         border-radius: 0.3em;
-        margin: 2em 1em 0 0;
+        margin: 4em 1em 0 0;
         border: none;
+        text-decoration: none;
     }
 
     article {
@@ -90,8 +91,8 @@ section {
         }
 
         img {
-            height: 100%;
-            width: 100%;
+            height: 400px;
+            width: 400px;
             object-fit: cover;
         }
     }
@@ -104,8 +105,8 @@ section {
         }
 
         img {
-            height: 100%;
-            width: 100%;
+            height: 400px;
+            width: 400px;
             object-fit: cover;
         }
     }

@@ -3,8 +3,8 @@ import { Header } from '../partials/header'
 import slideshow from '../images/Assets/Slideshow/malerspande.jpg'
 import { Sectionstyle } from '../style/home.style'
 import { Footer } from '../partials/footer'
-import artone from '../images/Assets/Layout/art-one.png'
-import arttwo from '../images/Assets/Layout/art-two.png'
+import artone from '../images/Assets/Layout/art-one.webp'
+import arttwo from '../images/Assets/Layout/art-two.webp'
 
 export const Home = () => {
     return (
@@ -16,8 +16,8 @@ export const Home = () => {
                         <img src={slideshow} alt="" />
                         <div className='onmain'>
                             <h3>Find og anmeld genbrugsstationer</h3>
-                            <button>Find station</button>
-                            <button>Log ind</button>
+                            <a href="/recycling">Find station</a>
+                            <a href="/login">Log ind</a>
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@ export const Home = () => {
                     <div>
                         <h2>Din <span>guide til sortering</span> </h2>
                         <p>Her kan du se hvordan du skal sortere og hvad der skal i hvilke beholdere. Du får også tips og tricks til, hvordan du gør det nemt at sortere hjemme hos dig.</p>
-                        <button>Se affaldsguide</button>
+                        <a href="/sortering">Se affaldsguide</a>
                     </div>
 
                     <div className='pic'>
@@ -47,7 +47,7 @@ export const Home = () => {
                     <div>
                         <h2>bestil <span>din nye affaldsbeholder</span> </h2>
                         <p>when an unknown printer took a galley of type and scramble it to make a type specimen book. It has survived not only</p>
-                        <button>Bestil nu</button>
+                        <a href="/order">Bestil nu</a>
                     </div>
 
                 </article>
