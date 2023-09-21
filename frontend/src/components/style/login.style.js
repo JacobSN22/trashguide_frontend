@@ -82,6 +82,28 @@ export const Loginstyle = styled.div`
     }
 
 
+    .loggedin {
+        text-align: center;
+        margin: 5em 0;
+        font-family: sans-serif;
+
+        p {
+            font-size: 32px;
+        }
+
+        button {
+                background-color: #114D46;
+                color: #FFFFFF;
+                padding: 1em 5em;
+                border-radius: 1em;
+                border: none;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+    }
+
 
 
     .wave {

@@ -86,7 +86,7 @@ export const Login = () => {
                     </>
 
                 ) : (
-                    <div>
+                    <div className='loggedin'>
                         <p>Du er logget ind</p>
                         <button onClick={() => Logout()}>Log ud</button>
                     </div>
