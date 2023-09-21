@@ -42,6 +42,12 @@ export const Footerstyle = styled.footer`
         }
     }
 
+    .wave {
+        img {
+            width: 100%;
+        }
+    }
+
     
 
 `

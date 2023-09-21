@@ -42,7 +42,10 @@ section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1em;
-        margin: 0 auto;
+
+        div {
+            margin: auto;
+        }
 
         .container {
             border-radius: 0.3em;

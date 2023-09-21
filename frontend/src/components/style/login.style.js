@@ -4,7 +4,7 @@ export const Loginstyle = styled.div`
 
     section {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 10em;
         text-align: center;
         background-color: #F4F7F7;
@@ -47,6 +47,8 @@ export const Loginstyle = styled.div`
 
                 img {
                     width: 20px;
+                    vertical-align: -5px;
+
                 }
             }
 

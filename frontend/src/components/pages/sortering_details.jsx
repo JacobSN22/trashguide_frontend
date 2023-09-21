@@ -29,7 +29,7 @@ export const Sortering_details = () => {
       console.log(result.data.categories);
     }
     getdata()
-  }, []);
+  }, [id]);
 
   const goBack = () => {
     window.history.back();
@@ -41,17 +41,21 @@ export const Sortering_details = () => {
       <Header />
       <Detailsstyle>
         <button onClick={goBack}>Gå tilbage</button>
-        {details && details.map(item => {
-          return (
-            <>
-              <NavLink to={`/sortering/${item.id}/details/${item.id}`}>
-                <div key={item.id} className='container'>
-                  <h3>{item.title}</h3>
-                </div>
-              </NavLink>
-            </>
-          )
-        })}
+        <div className='sortgrid'>
+
+          {details && details.map(item => {
+            return (
+              <>
+                <NavLink to={`/sortering/${item.id}/details/${item.id}`}>
+                  <div key={item.id} className='container'>
+                    <img src={`http://localhost:4000/Assets/Images/Guide/Categories/${item.image_filename}`} alt="" />
+                    <h3>{item.title}</h3>
+                  </div>
+                </NavLink>
+              </>
+            )
+          })}
+        </div>
       </Detailsstyle>
       <Footer />
     </>
@@ -71,7 +75,7 @@ export const Category_details = () => {
       setDetails(result.data.types);
     }
     getdata();
-  }, []);
+  }, [id]);
 
   const goBack = () => {
     window.history.back();
@@ -86,28 +90,34 @@ export const Category_details = () => {
       <Header />
       <Detailsstyle>
         <button onClick={goBack}>Gå tilbage</button>
-
-        <div className='true-items'>
-          <h2>Hvad modtager vi?</h2>
-          <hr />
-          {trueItems.map(item => ( // mapper du rules som er true
-            <div key={item.id} className='container' style={{ color: 'green' }}>
-              <h3>{item.title}</h3>
-              <p>Ja tak</p>
+        <div className='border'>
+          <div className='true-items'>
+            <h2>Hvad modtager vi?</h2>
+            <hr />
+            <div className='items-grid'>
+              {trueItems.map(item => ( // mapper du rules som er true
+                <div key={item.id} className='container'>
+                  <h3>{item.title}</h3>
+                  <p>Ja tak</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div className='false-items'>
+            <h2>Hvad modtager vi ikke?</h2>
+            <hr />
+            <div className='items-grid'>
+              {falseItems.map(item => ( //mapper de rules som er false
+                <div key={item.id} className='container' >
+                  <h3>{item.title}</h3>
+                  <p>Nej tak</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className='false-items'>
-          <h2>Hvad modtager vi ikke?</h2>
-          <hr />
-          {falseItems.map(item => ( //mapper de rules som er false
-            <div key={item.id} className='container' style={{ color: 'red' }}>
-              <h3>{item.title}</h3>
-              <p>Nej tak</p>
-            </div>
-          ))}
-        </div>
       </Detailsstyle>
       <Footer />
     </>
