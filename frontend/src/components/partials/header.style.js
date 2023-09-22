@@ -25,7 +25,7 @@ export const Headerstyle = styled.header`
 
             li {
                 display: inline;
-                margin: 1em;
+                margin: 0.7em;
                 a {
                     color: #232F44;
                     text-decoration: none;
@@ -42,6 +42,29 @@ export const Headerstyle = styled.header`
         padding: 1em;
         text-align: right;
     }
+
+
+
+
+    @media (max-width: 1250px) {
+
+        header {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+        
+        .loginicon {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 0 0 0 0.5em;
+    }
+
+
+}
 
     
 

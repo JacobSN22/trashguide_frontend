@@ -11,16 +11,17 @@ export const Footerstyle = styled.footer`
         grid-template-columns: 1fr 1fr;
         padding-bottom: 2em;
 
-        h4 {
+        h1 {
             color: white;
+            font-weight: 100;
         }
 
         p {
-            color: #FFFFFFB2;
+            color: #FFFFFF;
         }
 
-        h5 {
-            color: #FFFFFF80;
+        h2 {
+            color: #FFFFFF;
             font-weight: 100;
             font-size: 15px;
             display: inline;
@@ -37,7 +38,7 @@ export const Footerstyle = styled.footer`
 
             a {
                 text-decoration: none;
-                color: #FFFFFF99;
+                color: #FFFFFF;
             }
         }
     }

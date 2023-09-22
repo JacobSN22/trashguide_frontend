@@ -9,7 +9,7 @@ export const Header = () => {
         <Headerstyle>
             <hr />
             <header>
-                <div>
+                <div className='logo'>
                     <img src={logo} alt="Logo" />
                     <h1>Affaldsguiden</h1>
                 </div>
@@ -26,8 +26,7 @@ export const Header = () => {
                 </div>
 
                 <div className='loginicon'>
-                    <a href="/login"><img src={unlock} alt="" /></a>
-                    
+                    <a href="/login" aria-label="Log ind knap"><img src={unlock} alt="" /></a>
                 </div>
             </header>
             </Headerstyle>

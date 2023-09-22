@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from '../partials/header'
-import slideshow from '../images/Assets/Slideshow/malerspande.jpg'
+import slideshow from '../images/Assets/Slideshow/malerspande.webp'
 import { Sectionstyle } from '../style/home.style'
 import { Footer } from '../partials/footer'
 import artone from '../images/Assets/Layout/art-one.webp'
@@ -15,7 +15,7 @@ export const Home = () => {
                     <div className='main'>
                         <img src={slideshow} alt="" />
                         <div className='onmain'>
-                            <h3>Find og anmeld genbrugsstationer</h3>
+                            <h1>Find og anmeld genbrugsstationer</h1>
                             <a href="/recycling">Find station</a>
                             <a href="/login">Log ind</a>
                         </div>
@@ -34,7 +34,7 @@ export const Home = () => {
                     </div>
 
                     <div className='pic'>
-                        <img src={artone} alt="affald" />
+                    <img src={artone} alt="affald" />
                     </div>
                 </article>
 

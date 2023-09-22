@@ -15,9 +15,9 @@ export const Footer = () => {
         <footer>
           <div className='footertext'>
 
-            <h4><img src={logo} alt="" /> Affaldsguiden</h4>
+            <h1><img src={logo} alt="" /> Affaldsguiden</h1>
             <p>Vi arbejder for at informere om korrekt affaldssortering. Ved at sortere hjælper du os, men også klimaet.</p> <br /><br />
-            <h5>©2023 Affaldsguiden. </h5>
+            <h2>©2023 Affaldsguiden. </h2>
           </div>
 
           <div className='totop'>

@@ -26,13 +26,13 @@ section {
         background-color: #D8EADB;
         position: relative;
         top: 520px;
-        left: 30%;
+        left: 30vw;
         border-radius: 1em;
         padding: 2em;
         text-align: center;
     }
 
-    h3 {
+    h1 {
         font-size: 35px;
         color: #222A41;
         font-weight: 100;
@@ -85,19 +85,28 @@ section {
     }
 
     .artone {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
         .pic {
             width: 400px;
-            max-width: 400px;
+            max-width: 400px;        
+            
+            img {
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+            }
         }
 
-        img {
-            height: 400px;
-            width: 400px;
-            object-fit: cover;
-        }
+
     }
 
     .arttwo {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
         .pic {
             width: 400px;
