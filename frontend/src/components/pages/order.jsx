@@ -11,7 +11,7 @@ import { Footer } from "../partials/footer"
  */
 export const Order = () => {
   const { loginData } = useAuth()
-  const { register, handleSubmit, formState: { errors } } = useForm()
+  const { register, handleSubmit, formState: { errors } } = useForm() //Form Hook
 
   const formSubmit = async formObject => {
     const api_endpoint = 'http://localhost:4000/orders'
@@ -60,10 +60,6 @@ export const Order = () => {
             <input placeholder="Navn" {...register('fullname',
               {
                 required: 'Du skal indtaste dit fornavn',
-                // pattern: {
-                //   value: /^[A-Za-z\s]+$/i,
-                //   message: 'Du skal indtaste et gyldigt navn'
-                // }
               })} />
           </div>
 
@@ -71,8 +67,10 @@ export const Order = () => {
             {errors.email && <span>{errors.email.message}</span>}
             <input placeholder="Email" {...register('email',
               {
+                // Hvis send trykkes kommer denne besked
                 required: 'Du skal indtaste din email',
                 pattern: {
+                  // Skal indeholde @ for at blive gyldig
                   value: /^\S+@\S+$/,
                   message: 'Du skal indtaste en gyldig mailadresse'
                 },
@@ -86,6 +84,7 @@ export const Order = () => {
               {
                 required: 'Du skal indtaste dit telefonnummer',
                 pattern: {
+                  //Skal være 8 tal langt for at være gyldigt
                   value: /^\d{8,8}$/,
                   message: 'Du skal indtaste et gyldigt telefonnummer'
                 },
@@ -111,10 +110,12 @@ export const Order = () => {
                   message: 'Du skal indtaste et gyldigt postnummer'
                 },
                 min: {
+                  // Må mindst være 999
                   value: 999,
                   message: 'Postnummer kan ikke være mindre end 1000'
                 },
                 max: {
+                  // Må max være 9990
                   value: 9990,
                   message: 'Postnummer kan ikke være større end 9990'
                 }

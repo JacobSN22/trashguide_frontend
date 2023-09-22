@@ -29,6 +29,7 @@ export const Sortering_details = () => {
       console.log(result.data.categories);
     }
     getdata()
+    // Dependency array
   }, [id]);
 
   const goBack = () => {
