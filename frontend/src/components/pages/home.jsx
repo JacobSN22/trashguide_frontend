@@ -12,8 +12,9 @@ export const Home = () => {
             <Header />
             <Sectionstyle>
                 <section>
-                    <div className='main'>
-                        <img src={slideshow} alt="" />
+                    <img className='firstimg' src={slideshow} alt="" />
+                    
+                    <div className='main'>    
                         <div className='onmain'>
                             <h1>Find og anmeld genbrugsstationer</h1>
                             <a href="/recycling">Find station</a>

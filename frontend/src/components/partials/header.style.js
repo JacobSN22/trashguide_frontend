@@ -51,6 +51,10 @@ export const Headerstyle = styled.header`
         header {
             grid-template-columns: 1fr;
             padding: 0;
+
+            ul {
+                padding: 0 0 0 1em;
+            }
         }
         
         .loginicon {

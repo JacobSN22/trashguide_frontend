@@ -56,19 +56,20 @@ export const Order = () => {
             </div>
 
             <div>
+              {errors.fullname && <span>{errors.fullname.message}</span>}
               <label htmlFor="fullname"></label>
               <input placeholder="Navn" {...register('fullname',
                 {
                   required: 'Du skal indtaste dit fornavn',
-                  pattern: {
-                    value: /^[A-Za-z\s]+$/i,
-                    message: 'Du skal indtaste et gyldigt navn'
-                  }
-                })} /> <br />
-              {errors.fullname && <span>{errors.fullname.message}</span>}
+                  // pattern: {
+                  //   value: /^[A-Za-z\s]+$/i,
+                  //   message: 'Du skal indtaste et gyldigt navn'
+                  // }
+                })} /> 
             </div>
 
             <div>
+              {errors.email && <span>{errors.email.message}</span>}
               <label htmlFor="email"></label>
               <input placeholder="Email" {...register('email',
                 {
@@ -77,12 +78,12 @@ export const Order = () => {
                     value: /^\S+@\S+$/,
                     message: 'Du skal indtaste en gyldig mailadresse'
                   },
-                })} /> <br />
-              {errors.email && <span>{errors.email.message}</span>}
+                })} />
             </div>
 
 
             <div>
+              {errors.phone && <span>{errors.phone.message}</span>}
               <label htmlFor="phone"></label>
               <input placeholder="Telefon" {...register('phone',
                 {
@@ -92,20 +93,20 @@ export const Order = () => {
                     message: 'Du skal indtaste et gyldigt telefonnummer'
                   },
 
-                })} /> <br />
-              {errors.phone && <span>{errors.phone.message}</span>}
+                })} /> 
             </div>
 
             <div>
+              {errors.address && <span>{errors.address.message}</span>}
               <label htmlFor="address"></label>
               <input placeholder="Adresse" {...register('address',
                 {
                   required: 'Du skal indtaste din adresse'
-                })} /> <br />
-              {errors.address && <span>{errors.address.message}</span>}
+                })} />
             </div>
 
             <div>
+              {errors.zipcode && <span>{errors.zipcode.message}</span>}
               <label htmlFor="zipcode"></label>
               <input placeholder="Postnummer" {...register('zipcode',
                 {
@@ -122,22 +123,22 @@ export const Order = () => {
                     value: 9990,
                     message: 'Postnummer kan ikke være større end 9990'
                   }
-                })} /> <br />
-              {errors.zipcode && <span>{errors.zipcode.message}</span>}
+                })} />
             </div>
 
             <div>
+              {errors.city && <span>{errors.city.message}</span>}
               <label htmlFor="city"></label>
               <input placeholder="By" {...register('city',
                 {
                   required: 'Du skal indtaste et bynavn'
-                })} /> <br />
-              {errors.city && <span>{errors.city.message}</span>}
+                })} />
             </div>
 
 
 
             <div>
+              {errors.container_id && <span>{errors.container_id.message}</span>}
               <label htmlFor="container_id"></label>
               <select name="" id=""{...register('container_id',
                 {
@@ -148,8 +149,7 @@ export const Order = () => {
                 <option value="2">Plast og metal</option>
                 <option value="3">Mad og rest</option>
                 <option value="4">Farligt</option>
-              </select> <br />
-              {errors.container_id && <span>{errors.container_id.message}</span>}
+              </select>
             </div>
 
             <div>

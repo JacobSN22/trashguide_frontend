@@ -5,11 +5,18 @@ export const Loginstyle = styled.div`
     section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 10em;
+        gap: 7em;
         text-align: center;
         background-color: #F4F7F7;
-        padding: 10em 10em;
+        padding: 5em 5em;
         font-family: sans-serif;
+    }
+
+    @media (max-width: 1160px) {
+        section {
+            padding: 5em 0;
+            gap: 1em;
+        }
     }
 
     .text {

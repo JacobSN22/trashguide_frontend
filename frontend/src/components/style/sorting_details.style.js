@@ -54,9 +54,7 @@ export const Detailsstyle = styled.section`
                 border: none;
                 box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
                 -webkit-box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
-                position: sticky;
-                top: 10%;
-                left: 3%;
+
             }
 
             button:hover {

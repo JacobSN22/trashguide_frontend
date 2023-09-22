@@ -14,19 +14,24 @@ section {
         object-fit: cover;
     }
 
-    .main img {
+    .firstimg {
         position: absolute;
     }
 
+    .main {
+        text-align: center;
+    }
+
     .onmain {
+        margin: auto;
         height: 200px;
-        width: 100%;
         max-height: 250px;
         max-width: 600px;
+        width: 100%;
         background-color: #D8EADB;
         position: relative;
+        /* margin-left: 30%; */
         top: 520px;
-        left: 30vw;
         border-radius: 1em;
         padding: 2em;
         text-align: center;
@@ -52,7 +57,7 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10em;
-        padding: 0 15%;
+        padding: 0 10%;
         font-family: sans-serif;
         margin-bottom: 5em;
 
@@ -89,6 +94,10 @@ section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
+        div {
+            margin: auto;
+        }
+
         .pic {
             width: 400px;
             max-width: 400px;        
@@ -107,6 +116,10 @@ section {
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+        div {
+            margin: auto;
+        }
 
         .pic {
             width: 400px;
