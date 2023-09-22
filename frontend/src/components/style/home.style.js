@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Sectionstyle = styled.section`
+export const Homestyle = styled.section`
 
 section {
     font-family: sans-serif;

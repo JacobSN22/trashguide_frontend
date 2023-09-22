@@ -1,20 +1,24 @@
 import React from 'react'
 import { Header } from '../partials/header'
 import slideshow from '../images/Assets/Slideshow/malerspande.webp'
-import { Sectionstyle } from '../style/home.style'
+import { Homestyle } from '../style/home.style'
 import { Footer } from '../partials/footer'
 import artone from '../images/Assets/Layout/art-one.webp'
 import arttwo from '../images/Assets/Layout/art-two.webp'
+import { Activestyle } from '../style/active.style'
 
 export const Home = () => {
     return (
         <>
+        <Activestyle>
             <Header />
-            <Sectionstyle>
+        </Activestyle>
+            
+            <Homestyle>
                 <section>
                     <img className='firstimg' src={slideshow} alt="" />
-                    
-                    <div className='main'>    
+
+                    <div className='main'>
                         <div className='onmain'>
                             <h1>Find og anmeld genbrugsstationer</h1>
                             <a href="/recycling">Find station</a>
@@ -35,7 +39,7 @@ export const Home = () => {
                     </div>
 
                     <div className='pic'>
-                    <img src={artone} alt="affald" />
+                        <img src={artone} alt="affald" />
                     </div>
                 </article>
 
@@ -52,7 +56,7 @@ export const Home = () => {
                     </div>
 
                 </article>
-            </Sectionstyle>
+            </Homestyle>
             <Footer />
         </>
     )

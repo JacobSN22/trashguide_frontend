@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const Sortingstyle = styled.section`
 
+.activetwo {
+    color: #6DA830;
+}
+
 section {
     max-width: 100%;
     padding: 2em 5em;

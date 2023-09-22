@@ -21,9 +21,9 @@ export const Sortering = () => {
 
   return (
     <>
-
-      <Header />
       <Sortingstyle>
+        <Header />
+
         <section>
 
           <div className='search'>

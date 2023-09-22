@@ -17,10 +17,10 @@ export const Header = () => {
                 <div>
                     <nav>
                         <ul>
-                            <li><a href="/">Forside</a></li>
-                            <li><a href="/sortering">Sortering</a></li>
-                            <li><a href="/recycling">Genbrugsstationer</a></li>
-                            <li><a href="/order">Bestil beholder</a></li>
+                            <li><a className='activeone' href="/">Forside</a></li>
+                            <li><a className='activetwo' href="/sortering">Sortering</a></li>
+                            <li><a className='activethree' href="/recycling">Genbrugsstationer</a></li>
+                            <li><a className='activefour' href="/order">Bestil beholder</a></li>
                         </ul>
                     </nav>
                 </div>

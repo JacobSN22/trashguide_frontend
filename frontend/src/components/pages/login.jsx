@@ -53,9 +53,9 @@ export const Login = () => {
     }
 
     return (
-        <>
+        <><Loginstyle>
             <Header />
-            <Loginstyle>
+            
                 {!loginData.access_token ? (
                     <>
                         <section>
